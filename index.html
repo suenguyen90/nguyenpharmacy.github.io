@@ -9,30 +9,39 @@
 <body> 
     <header>  
         <!-- Pharmacy logo used for the page header; if the image doesnt show, the text "Nguyen Pharmacy" will show -->
-        <img src="PharmLogo.jpg" alt="NGUYEN Pharmacy"/>  
+        <div id="logo">
+            <a href="index.html"><img src="Banner.jpg" alt="NGUYEN Pharmacy"/> </a>
+        </div>
+    
         <!-- <nag> tag lists various hypertext links for section/navigation -->
-        <nav>
+        <nav class="horizontalNavigation">
             <!-- href provides URL of the linked pages whereas <a> tag link to external resources as hypertext -->
             <ul>
-                <li><a href="index.html">Homepage</a></li>
                 <li><a href="About Us.html">About us</a></li>
-                <li><a href="Prescriptions.html">Prescriptions</a></li>
-                <li><a href="Immunizations.html">Immunizations </a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Gallery.html">Gallery </a></li>
                 <li><a href="Contact Us.html"> Contact us </a></li>
             </ul>
         </nav>      
     </header>
-<article>
-<section>
-<!-- Major heading -->
-<h1>NGUYEN Pharmacy</h1>
-<p>Nguyen's Pharmacy is a family-owned pharmacy founded in 1970. Our mission is focus on improving the health and wellness of the local community. We are proud to offer the exceptional services and personalized experiences.</p>
-</section>
-</article>
+
+    <article>
+        <section>
+            <!-- Major heading -->
+            <h1>Our Envision</h1>
+            <p>Nguyen's Pharmacy is a family-owned pharmacy founded in 1970. Our mission is focus on improving the health and wellness of the local community.  We are proud to offer the exceptional services and personalized experiences.</p>
+        </section>
+            <h2>Why choose us</h2>
+            <p>What sets us apart is we put people first. we constanly show empathy, compassion and care for every patient. We commit to continuously improve and provide more effective ways to transform healthcare. We adapt to feedbacks, learn from mistakes and strive for challenges. Our focus is to improve quality of life while reduce costs to the patients. We emphasize in establishing strong relationships with our patients. We bring our hearts to every moment of your health.</p>
+    </article>
+    
 
 <!--footer contains copyright, pharmacy address and phone number   -->
 <footer>
     &#169; Copyright 2022 Nguyen Pharmacy &#8226; 123 45th St AVE S, CA 67890 &#8226; 987-654-3210
 </footer>
 </body>
+<!-- import CSS for the design and formatting -->
+<link href="Design.css" rel="stylesheet"/>
+
 </html>
