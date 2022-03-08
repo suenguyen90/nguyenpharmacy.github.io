@@ -8,7 +8,8 @@
 </head>
 <body> 
     <header>  
-        <!-- Pharmacy logo used for the page header; if the image doesnt show, the text "Nguyen Pharmacy" will show -->
+        <!-- Pharmacy logo used for the page header; if the image doesnt show, the text "Nguyen Pharmacy" will show 
+        link the banner to the main homepage by clicking on it-->
         <div id="logo">
             <a href="index.html"><img src="Banner.jpg" alt="NGUYEN Pharmacy"/> </a>
         </div>
@@ -16,7 +17,7 @@
         <!-- <nag> tag lists various hypertext links for section/navigation -->
         <nav class="horizontalNavigation">
             <!-- href provides URL of the linked pages whereas <a> tag link to external resources as hypertext -->
-            <ul>
+            <ul>               
                 <li><a href="About Us.html">About us</a></li>
                 <li><a href="Services.html">Services</a></li>
                 <li><a href="Gallery.html">Gallery </a></li>
@@ -27,12 +28,22 @@
 
     <article>
         <section>
-            <!-- Major heading -->
-            <h1>Our Envision</h1>
-            <p>Nguyen's Pharmacy is a family-owned pharmacy founded in 1970. Our mission is focus on improving the health and wellness of the local community.  We are proud to offer the exceptional services and personalized experiences.</p>
+            <table class=""homepage">
+            <!-- A row of table header cells; still use h1 and h2 for major headings to make them stand out -->
+            <tr>
+                <th><h1>Our Envision</h1> </th>
+                <th><h2>Why choose us</h2></th>
+            </tr>
+            <!-- td contains cell data -->
+            <tr>
+                <td><p>Nguyen's Pharmacy is a family-owned pharmacy founded in 1970. Our mission is focus on improving the health and wellness of the local community.  We are proud to offer the exceptional services and personalized experiences.</p></td>
+                <td><p>What sets us apart is we put people first. we constanly show empathy, compassion and care for every patient. We commit to continuously improve and provide more effective ways to transform healthcare. We adapt to feedbacks, learn from mistakes and strive for challenges. Our focus is to improve quality of life while reduce costs to the patients. We emphasize in establishing strong relationships with our patients. We bring our hearts to every moment of your health.</p></td>
+            </tr></table>
+            
+            
         </section>
-            <h2>Why choose us</h2>
-            <p>What sets us apart is we put people first. we constanly show empathy, compassion and care for every patient. We commit to continuously improve and provide more effective ways to transform healthcare. We adapt to feedbacks, learn from mistakes and strive for challenges. Our focus is to improve quality of life while reduce costs to the patients. We emphasize in establishing strong relationships with our patients. We bring our hearts to every moment of your health.</p>
+            
+            
     </article>
     
 
