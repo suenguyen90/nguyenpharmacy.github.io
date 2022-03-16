@@ -22,17 +22,45 @@
     </header>
 <article>
 <section>
+
 <h1>NGUYEN Pharmacy</h1>
-<img src="PharmLogo.jpg" alt="Logo"/>
+<!-- insert the thumbnails and link them to their original sizes respectively; 
+all the links will load in the same external tab; avoid new windows popping up all the time
+ -->
+<div class="gallery">
+<a target="external" href="pills.jpg"><img src="rsz_pills.jpg" alt="Pills"/></a>
+</div> 
+<div class="gallery">
+<a target="external" href="pharmacy.jpg"><img src="rsz_pharmacy.jpg" alt="Pharmacy"/></a>
+</div>
+<div class="gallery">
+<a target="external" href="flask.jpg"><img src="rsz_flask.jpg" alt="Flask"/></a>
+</div>
+<!-- embed the audio file and player controls in the webpage; 
+    specify type attribute as mp3 to inform and let the browser quickly choose compatible file type;
+if the browser is unable to play the file, the text message will display -->
+<audio controls>
+    <source src="In Memory of Jean Talon - The Mini Vandals.mp3" type="audio/mp3"/>
+    
+    <p>Your browser does not support the audio element.</p>
+</audio>
+<!-- embed the video file and player controls 
+    with the pharmacy logo as the preview image of the video;
+the string text will display if the video file is not compatible with the browser -->
+<video controls poster="PharmLogo.jpg">
+    <source src="Medications.mp4" type="video/mp4" />
+
+    <p>Your browser does not support the video element.</p>
+</video>
 
 </section>
-
 </article>
-</section>
+
 
 <footer>
     &#169; Copyright 2022 Nguyen Pharmacy 123 45th St AVE S, CA 67890
 </footer>
-</body>
+
 <link href="Design.css" rel="stylesheet"/>
+</body>
 </html>

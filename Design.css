@@ -92,3 +92,35 @@ table.about_us caption {
     text-align: left;
     font-size: 70%;
 }
+
+/* display the photos as blocks with black border, padding and background;
+when hover over the photos, the border change to bigger and white in color  */
+div.gallery {
+    display: inline-block;
+    background-color: black;
+    border: 2px solid black;
+    padding: 1em 1em;
+    margin-left: 5%; 
+    margin-bottom: 2em;   
+}
+div.gallery:hover {
+    border: 3px solid rgb(250, 247, 247);
+}
+/* audio controls with black background and left margin of 25%; width is set at 50% */
+audio{
+    display: block;
+    margin-left: 25%;
+    width: 50%;
+    background-color: black;
+    margin-bottom: 2em;
+}
+/* video size is set at height and width of 300px with black background and 1em paddding. */
+video{
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-left: 37%;
+    margin-bottom: 2em;
+    padding: 1em 1em;
+    background-color:  black;
+}
