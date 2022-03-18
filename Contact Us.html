@@ -67,9 +67,64 @@
 </tr>
 </table>
 </section>
-<p></p>
-</article>
-</section>
+<p><b>Have a question?</b></p>
+<form id="messageus" action=”response_page.php” method=”post”>
+    <!-- set id associated with each field element -->
+    <fieldset id="cusinfor">
+        <!-- legend contains only text and describes the field; they are styled by CSS-->
+        <legend>Customer Informations</legend>
+        <!-- nesting the label elements with controls; clicking on the labels will activate the controls 
+        add place holders to provide hints on input data; they disappear once the cursor is inside the element-->
+        <label>
+        Name
+        <input name="cusname" id="name" type="text" placeholder="first and last name"/>
+        </label>
+        <label>
+        Date of birth
+        <input name="cusdob" id="dob" type="date"/>
+        </label>
+        <label>
+        Gender:
+        <!-- radio allows selecting options choices -->
+        <input name="cusgender" id="gmale" type="radio"/>
+        <label for="gmale">Male</label>
+        
+        <input name="cusgender" id="gfemale" type="radio"/>
+        <label for="gfemale">Female</label>
+        </label>
+        <label>
+        Phone
+        <input name="cusphone" id="phone" type="tel" placeholder="000-000-0000"/>
+        </label>
+        <label>
+        Email Address
+        <input name="cusemail" id="email" type="email" placeholder="abc@gmail.com"/>
+        </label>
+    </fieldset>
+    <fieldset id="cusmessage">
+        <legend>Send us a message</legend>
+        <label> Subject
+        <!-- add selections to create a drop down lists of multiple options for customers to choose
+        this selection has 5 options and allows customers to select multiple topics by ctrl+click-->
+        <select name="cussub" id="topic" size="5" multiple>
+            <option value="Prescription Transfer">Prescription Transfer</option>
+            <option value="Prescription Refill">Prescription Refill</option>
+            <option value="Prescription Renewal Request">Prescription Renewal Request</option>
+            <option value="Immunization">Immunization</option>
+            <option value="Others">Others</option>
+        </label>
+        </select>
+        <label>Message
+        <!-- textarea allows input combinations and length of text, numbers and symbols  -->
+        <textarea name="cusinput" id="commbox"></textarea>
+        </label>
+    </fieldset>
+<div id="button">
+<input type="submit" value="Submit"/>
+</div>
+
+</form>
+
 
 <footer>
     &#169; Copyright 2022 Nguyen Pharmacy 123 45th St AVE S, CA 67890
