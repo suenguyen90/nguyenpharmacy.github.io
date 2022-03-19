@@ -68,42 +68,52 @@
 </table>
 </section>
 <p><b>Have a question?</b></p>
-<form id="cusquestion" action="response_page.php" method="post">
+<!-- GIthub doesnt support php since it is a static website hosting; 
+    External form handler services such as basin, formspree.io...etc can be used instead -->
+<form id="cusque" action="response_page.php" method="post">
     <!-- set id associated with each field element -->
     <fieldset id="cusinfor">
         <!-- legend contains only text and describes the field; they are styled by CSS-->
         <legend>Customer Informations</legend>
         <!-- nesting the label elements with controls; clicking on the labels will activate the controls 
         add place holders to provide hints on input data; they disappear once the cursor is inside the element-->
-        <label>
-        Name
+        <div class="formRow">
+        <label for="name"> <b>Name</b> </label>
         <input name="cusname" id="name" type="text" placeholder="first and last name"/>
-        </label>
-        <label>
-        Date of birth
+        </div>
+
+        <div class="formRow">
+        <label for="dob"><b>Date of birth </b></label>
         <input name="cusdob" id="dob" type="date"/>
-        </label>
-        <label>
-        Gender:
+        </div>
+
+        <div class="formRow">
+        <label for="gender"><b>Gender: </b> </label>           
         <!-- radio allows selecting options choices -->
-        <input name="cusgender" id="gmale" type="radio"/>
-        <label for="gmale">Male</label>
-        
-        <input name="cusgender" id="gfemale" type="radio"/>
-        <label for="gfemale">Female</label>
-        </label>
-        <label>
-        Phone
+        <input name="cusgender" id="gender" type="radio"/> <label>Male</label>        
+        <input name="cusgender" id="gender" type="radio"/> <label>Female</label>
+        </div>        
+
+        <div class="formRow">
+        <label for="phone"><b> Phone </b></label>
         <input name="cusphone" id="phone" type="tel" placeholder="000-000-0000"/>
         </label>
-        <label>
-        Email Address
+        </div>
+
+        <div class="formRow">
+        <label for="email"><b>Email Address </b></label>
         <input name="cusemail" id="email" type="email" placeholder="abc@gmail.com"/>
         </label>
+        </div>
+        
     </fieldset>
     <fieldset id="cusmessage">
         <legend>Send us a message</legend>
-        <label> Subject
+    
+        
+
+    <div class="formRow">
+        <label for="topic"> <b>Subject </b></label>
         <!-- add selections to create a drop down lists of multiple options for customers to choose
         this selection has 5 options and allows customers to select multiple topics by ctrl+click-->
         <select name="cussub" id="topic" size="5" multiple>
@@ -112,13 +122,19 @@
             <option value="Prescription Renewal Request">Prescription Renewal Request</option>
             <option value="Immunization">Immunization</option>
             <option value="Others">Others</option>
-        </label>
+        
         </select>
-        <label>Message
+    </div>
+        
+
+    <div class="formRow">
+        <label for="commbox"><b>Message </b></label>
         <!-- textarea allows input combinations and length of text, numbers and symbols  -->
         <textarea name="cusinput" id="commbox"></textarea>
-        </label>
+        
+    </div>
     </fieldset>
+<!-- create a submit button -->
 <div id="button">
 <input type="submit" value="Submit"/>
 </div>

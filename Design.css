@@ -124,3 +124,53 @@ video{
     padding: 1em 1em;
     background-color:  black;
 }
+/* Set the form as a flex box with flexible textfields */
+form#cusque{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+/* customize the back ground color, border size and color, the fieldset size */
+form#cusque>fieldset{
+background-color: rgb(112, 177, 112);
+border-radius: 10px;
+border-color: black;
+-webkit-flex: 1 1 200px;
+flex: 1 1 200px;
+padding: 5px;
+margin: 1em;
+}
+/* set the background and boldness and uppercae for the legend to stand out */
+legend{
+background-color: black;
+color: rgb(112, 177, 112);
+text-transform: uppercase;
+font-weight: bold;
+}
+/* create flexible layout as displaying class formRow as a horizontal flexbox */
+div.formRow{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding: 5px;
+    margin: 5px;
+}
+div.formRow > * {
+    -webkit-flex: 1 1 20px;
+    flex: 1 1 20px;
+    }
+/* set the textarea size of the message section for 100pxx100px */
+textarea{
+    height: 100px;
+    width: 100px;
+}
+/* customize the center alignment of button text, with 5px padding */
+div#button{
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+}
+
+
