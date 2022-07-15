@@ -1,58 +1,42 @@
-<!-- Hoangyen Nguyen 02/22/2022 Homepage -->
-<!DOCTYPE html> 
-<html>
-<Head>
-    <!--Title text appears on browser tab-->
-    <Title> NGUYEN's Pharmacy </Title>
-    
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Invitation Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
-<body> 
-    <header>  
-        <!-- Pharmacy logo used for the page header; if the image doesnt show, the text "Nguyen Pharmacy" will show 
-        link the banner to the main homepage by clicking on it-->
-        <div id="logo">
-            <a href="index.html"><img src="Banner.jpg" alt="NGUYEN Pharmacy"/> </a>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
         </div>
-    
-        <!-- <nag> tag lists various hypertext links for section/navigation -->
-        <nav class="horizontalNavigation">
-            <!-- href provides URL of the linked pages whereas <a> tag link to external resources as hypertext -->
-            <ul>               
-                <li><a href="About Us.html">About us</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="Gallery.html">Gallery </a></li>
-                <li><a href="Contact Us.html"> Contact us </a></li>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html" class="active">Home</a>
+                </li>
+                <li><a href="invitation.html">Invitation</a>
+                </li>
+				<li><a href="volunteer.html">Volunteers</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="registration.html">Registration</a>
+                </li>
             </ul>
-        </nav>      
+
+        </nav>
     </header>
+    <section id="bannerImages">
+	Banner Images<br/>
+<img src="images/banner1.jpg" alt="Banner"/>
+<img src="images/banner2.jpg" alt="Banner"/>
+<img src="images/banner3.jpg" alt="Banner"/>
+    </section>
 
-    <article>
-        <section>
-            <table class=""homepage">
-            <!-- A row of table header cells; still use h1 and h2 for major headings to make them stand out -->
-            <tr>
-                <th><h1>Our Envision</h1> </th>
-                <th><h2>Why choose us</h2></th>
-            </tr>
-            <!-- td contains cell data -->
-            <tr>
-                <td><p>Nguyen's Pharmacy is a family-owned pharmacy founded in 1970. Our mission is focus on improving the health and wellness of the local community.  We are proud to offer the exceptional services and personalized experiences.</p></td>
-                <td><p>What sets us apart is we put people first. we constanly show empathy, compassion and care for every patient. We commit to continuously improve and provide more effective ways to transform healthcare. We adapt to feedbacks, learn from mistakes and strive for challenges. Our focus is to improve quality of life while reduce costs to the patients. We emphasize in establishing strong relationships with our patients. We bring our hearts to every moment of your health.</p></td>
-            </tr></table>
-            
-            
-        </section>
-            
-            
-    </article>
-    
 
-<!--footer contains copyright, pharmacy address and phone number   -->
-<footer>
-    &#169; Copyright 2022 Nguyen Pharmacy &#8226; 123 45th St AVE S, CA 67890 &#8226; 987-654-3210
-</footer>
+    <footer>This events site is for IT3515 tasks.
+    </footer>
 </body>
-<!-- import CSS for the design and formatting -->
-<link href="Design.css" rel="stylesheet"/>
 
 </html>

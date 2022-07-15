@@ -1,66 +1,68 @@
 <!DOCTYPE html>
-<html>
-<Head>
-    <!--Title text appears on browser tab-->
-    <Title> NGUYEN's Pharmacy </Title>
-    
+<html lang="en-US">
+
+<head>
+    <title>Invitation Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
-<body> 
-    <header> 
-        <div id="logo">
-            <a href="index.html"><img src="Banner.jpg" alt="NGUYEN Pharmacy"/> </a>
-            </div> 
-        
-        <nav class="horizontalNavigation">
-            <ul>
-                <li><a href="About Us.html">About us</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="Gallery.html">Gallery </a></li>
-                <li><a href="Contact Us.html"> Contact us </a></li>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html">Invitation</a>
+                </li>
+				<li><a href="volunteer.html">Volunteers</a>
+                </li>
+                <li><a href="gallery.html"  class="active">Gallery</a>
+                </li>
+                <li><a href="registration.html">Registration</a>
+                </li>
             </ul>
-        </nav>      
+
+        </nav>
     </header>
-<article>
-<section>
+    <section id="gallery">
 
-<h1>NGUYEN Pharmacy</h1>
-<!-- insert the thumbnails and link them to their original sizes respectively; 
-all the links will load in the same external tab; avoid new windows popping up all the time
- -->
 <div class="gallery">
-<a target="external" href="pills.jpg"><img src="rsz_pills.jpg" alt="Pills"/></a>
-</div> 
-<div class="gallery">
-<a target="external" href="pharmacy.jpg"><img src="rsz_pharmacy.jpg" alt="Pharmacy"/></a>
+  <a target="_blank" href="images/firefighter.jpg">
+    <img src="images/firefighter.jpg" alt="firefighter" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
 </div>
+
 <div class="gallery">
-<a target="external" href="flask.jpg"><img src="rsz_flask.jpg" alt="Flask"/></a>
+  <a target="_blank" href="images/work.jpg">
+    <img src="images/work.jpg" alt="work" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
 </div>
-<!-- embed the audio file and player controls in the webpage; 
-    specify type attribute as mp3 to inform and let the browser quickly choose compatible file type;
-if the browser is unable to play the file, the text message will display -->
-<audio controls>
-    <source src="In Memory of Jean Talon - The Mini Vandals.mp3" type="audio/mp3"/>
-    
-    <p>Your browser does not support the audio element.</p>
-</audio>
-<!-- embed the video file and player controls 
-    with the pharmacy logo as the preview image of the video;
-the string text will display if the video file is not compatible with the browser -->
-<video controls poster="PharmLogo.jpg">
-    <source src="medications.mp4" type="video/mp4" />
 
-    <p>Your browser does not support the video element.</p>
-</video>
+<div class="gallery">
+  <a target="_blank" href="images/silhouette.jpg">
+    <img src="images/silhouette.jpg" alt="silhouette" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
 
-</section>
-</article>
+<div class="gallery">
+  <a target="_blank" href="images/event.jpg">
+    <img src="images/event.jpg" alt="event" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+    </section>
 
 
-<footer>
-    &#169; Copyright 2022 Nguyen Pharmacy 123 45th St AVE S, CA 67890
-</footer>
 
-<link href="Design.css" rel="stylesheet"/>
+    <footer>This events site is for IT3515 tasks.
+    </footer>
 </body>
+
 </html>
