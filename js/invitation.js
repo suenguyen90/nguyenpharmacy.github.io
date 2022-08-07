@@ -1,16 +1,13 @@
 //function created to replace the content
 function replaceContent() {
-    
-	//declaring the variables to store the input values
-    
+	//declaring the variables
 	var myRecipientName;
-	var myHostName;
-    
-	//setting the variable to the input fields by finding the HTML elements with id recipientNameInput and hostNameInput
-	myRecipientName = document.getElementById("recipientNameInput").value;
-	myHostName = document.getElementById("hostNameInput").value;
 	
-	//Change the content of the HTML element with id recipientNamePlaceholder and hostNamePlaceholder with the created variables 
+	//setting the variable to the input field's id named recipientNameInput's value
+	myRecipientName = document.getElementById("recipientNameInput").value;
+	
+	console.log('Variable myRecipientName: ' + myRecipientName);
+	
+	//setting the HTML code in the span id recipientNamePlaceholder with the variable 
 	document.getElementById("recipientNamePlaceholder").innerHTML = myRecipientName;
-    document.getElementById("hostNamePlaceholder").innerHTML = myHostName;
 } 
