@@ -131,9 +131,14 @@ div.gallery:hover {
     border: 1px solid #777;
 }
 
-div.gallery img {
+.gallery img {
     width: 100%;
     height: auto;
+}
+
+.gallery:hover img{
+    visibility: visible;
+    position: absolute;
 }
 
 div.desc {
