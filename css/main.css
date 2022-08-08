@@ -140,3 +140,28 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
+
+#errorUserName {
+    color: red;
+}
+#errorPassword {
+    color: red;
+}
+#errorPasswordVerify {
+    color: red;
+}
+#errorFirstName {
+    color: red;
+}
+#errorLastName {
+    color: red;
+}
+#errorEmail {
+    color: red;
+}
+#errorPhone {
+    color: red;
+}
+#errorSignUp {
+    color: red;
+}
